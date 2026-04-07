@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BACKGROUND */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+  z-index: -1;
+}
+
+/* CARD CONTAINER */
+.card {
+  width: 90%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* HERO SECTION */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 3.2rem;
+  color: #2d3436;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  color: #636e72;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.start-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #4b3dc7;
+  transform: translateY(-2px);
+}
+
+/* RIGHT-SIDE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 420px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hero-right img:hover {
+  transform: scale(1.05);
+}
+
+/* TODO APP DESIGN */
+#todoApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-container {
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.todo-container h2 {
+  margin-bottom: 15px;
+}
+
+/* INPUT SECTION */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #6c5ce7;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* TASK LIST */
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  background-color: #f1f2f6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList span {
+  cursor: pointer;
+  flex: 1;
+}
+
+/* COMPLETED TASK */
+.completed {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #e20b27, #c01028);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* EDIT BUTTON */
+.edit-btn {
+  background: linear-gradient(135deg, #00b894, #55efc4);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #00997a, #00d1a0);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* TABLET VIEW (≤ 992px) */
+@media (max-width: 992px) {
+  .card {
+    padding: 25px;
+  }
+
+  .hero-container {
+    gap: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-right img {
+    width: 320px;
+  }
+}
+
+
+/* MOBILE VIEW (≤ 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  /* CARD FULL WIDTH */
+  .card {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  /* HERO STACK */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 0.95rem;
+    margin: 0 auto 20px;
+  }
+
+  /* IMAGE FIX */
+  .hero-right img {
+    width: 250px;
+    margin-top: 15px;
+  }
+
+  /* BUTTON CENTER */
+  .start-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* TODO APP */
+  .todo-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* INPUT STACK */
+  .input-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-section input,
+  .input-section button {
+    width: 100%;
+  }
+
+  /* TASK LIST */
+  #taskList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* BUTTON GROUP BELOW */
+  #taskList li div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+
+/* SMALL MOBILE (≤ 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-left p {
+    font-size: 0.85rem;
+  }
+
+  .hero-right img {
+    width: 200px;
+  }
+
+  .start-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .todo-container h2 {
+    font-size: 1.3rem;
+  }
+
+  #taskList li {
+    padding: 8px;
+  }
+}

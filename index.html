@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3082/3082854.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+    <!-- LANDING CARD -->
+    <div class="card" id="landingPage">
+      <div class="hero-container">
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+          <h1>To-Do List</h1>
+          <p>
+            Organize your tasks efficiently and stay productive every day.
+            Manage your daily goals with ease and track your progress.
+          </p>
+          <button class="start-btn" id="startBtn">Try Now</button>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-right">
+          <img
+            src="https://bordio.com/wp-content/themes/understrap/images/todo-1-1x.png"
+            alt="To Do Illustration"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- TODO APP CARD -->
+    <div id="todoApp" style="display: none">
+      <div class="todo-container">
+        <h2>My To-Do List</h2>
+
+        <!-- INPUT SECTION -->
+        <div class="input-section">
+          <input type="text" id="taskInput" placeholder="Enter your task..." />
+          <button id="addBtn">ADD</button>
+        </div>
+
+        <!-- TASK LIST -->
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
