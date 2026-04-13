@@ -57,9 +57,10 @@ todo-list-app/
 ---
 
 ## 📸 Screenshots
-<img width="550" height="450" alt="Screenshot 2026-04-13 191218" src="https://github.com/user-attachments/assets/cf1e813d-f017-43fe-aa79-1244a8c12a1f" />
-<img width="550" height="450" alt="Screenshot 2026-04-13 191225" src="https://github.com/user-attachments/assets/a34f6211-e956-4759-9c06-ce2d4390a669" />
-
+<p align="center">
+<img width="45%" style="margin-right:10px;" alt="Screenshot 2026-04-13 191218" src="https://github.com/user-attachments/assets/cf1e813d-f017-43fe-aa79-1244a8c12a1f" />
+<img width="45%" alt="Screenshot 2026-04-13 191225" src="https://github.com/user-attachments/assets/a34f6211-e956-4759-9c06-ce2d4390a669" />
+</p>
 ---
 
 ## 🙋‍♂️ Author
